@@ -1,5 +1,5 @@
 # Python
-__pycache__/
+resume_site/resume_site/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd

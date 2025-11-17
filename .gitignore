@@ -1,6 +1,51 @@
-echo "
-venv/
-resume_site/resume_site/__pycache__/
-*.pyc
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Django
 db.sqlite3
-" > .gitignore
+media/
+staticfiles/
+
+# VENV
+venv/
+ENV/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment variables
+*.env
+.env.*
+*.secret
+
+# Cache
+*.cache
+.cache/
+*.pytest_cache/
+
+# Byte-compiled / compiled C extensions
+*.so
+
+# IDE stuff
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pip tools
+pip-wheel-metadata/

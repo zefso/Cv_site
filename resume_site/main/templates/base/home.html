@@ -1,0 +1,136 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Резюме — Горбач Роман (Головна){% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/base/home.css' %}"> 
+{% endblock %}
+
+{% block header_content %}
+<div class="header">
+
+    <div class="language-switcher" id="languageSwitcher">
+        <a href="?lang=ua" id="lang-ua"><img src="{% static 'img/flags/ua.png' %}" alt="Українська"></a>
+        <a href="?lang=en" id="lang-en"><img src="{% static 'img/flags/en.png' %}" alt="English"></a>
+        <a href="?lang=pl" id="lang-pl"><img src="{% static 'img/flags/pl.png' %}" alt="Polski"></a>
+    </div>
+
+    <div class="container profile">
+        <img src="{% static 'img/me.jpg' %}" class="profile-photo" alt="My photo" onerror="this.src='https://via.placeholder.com/150'"> 
+        <div>
+            <h1 class="name">Горбач Роман</h1>
+            <p class="subtitle">Python Developer • Django • ML</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section id="about" class="section">
+    <div class="container text-center"> <h2><i class="bi bi-person-circle"></i> Про мене</h2>
+        <div style="max-width: 700px; margin: 0 auto;">
+            <p class="lead">
+                Привіт! Я Python-розробник, захоплений створенням веб-додатків та роботою з даними. 
+                Шукаю можливості для розвитку в команді професіоналів.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="bi bi-briefcase"></i> Досвід роботи</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Backend Developer</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Назва Компанії | 2023 - Зараз</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>Розробка REST API на Django Rest Framework.</li>
+                                <li>Оптимізація SQL запитів (PostgreSQL).</li>
+                                <li>Написання Unit-тестів.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Junior Python Developer</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Freelance / Pet Projects | 2021 - 2023</h6>
+                        <p class="card-text">Створення телеграм-ботів, парсинг сайтів, автоматизація рутини.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container text-center">
+        <h2><i class="bi bi-tools"></i> Навички</h2>
+        <ul class="skills-list mt-4">
+            <li><i class="bi bi-filetype-py"></i> Python</li>
+            <li>Django / DRF</li>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript</li>
+            <li><i class="bi bi-database"></i> PostgreSQL</li>
+            <li>Docker</li>
+            <li>Git / GitHub</li>
+            <li>Linux</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4"><i class="bi bi-code-slash"></i> Проєкти</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>E-commerce Shop</h3>
+                <p class="text-muted">Django, Stripe API, Redis</p>
+                <p>Повноцінний інтернет-магазин з оплатою та кошиком.</p>
+                <a href="#" class="btn btn-dark btn-sm">Детальніше</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> Code</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Task Manager</h3>
+                <p class="text-muted">FastAPI, React, Docker</p>
+                <p>Система управління задачами з real-time оновленнями.</p>
+                <a href="#" class="btn btn-dark btn-sm">Детальніше</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> Code</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacts" class="section">
+    <div class="container text-center">
+        <h2><i class="bi bi-envelope-at"></i> Контакти</h2>
+        <p class="mb-4">Відкритий до пропозицій. Зв'яжіться зі мною:</p>
+        
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="roman27gorbach@gmail.com" class="btn btn-outline-dark btn-lg">
+                <i class="bi bi-envelope-fill"></i> Написати Email
+            </a>
+            <a href="https://github.com/zefso" target="_blank" class="btn btn-dark btn-lg">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/roma-horbach-9ab0a729b/" target="_blank" class="btn btn-primary btn-lg" style="background-color: #0077b5; border: none;">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://t.me/zefsooo" target="_blank" class="btn btn-info btn-lg text-white" style="background-color: #0088cc; border: none;">
+                <i class="bi bi-telegram"></i> Telegram
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

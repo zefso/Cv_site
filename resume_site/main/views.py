@@ -12,8 +12,8 @@ def contacts(request):
 def experience(request):
     return render(request, 'main/experience.html')
 
-def project(request):
-    return render(request, 'main/project.html')
+def projects(request):
+    return render(request, 'main/projects.html')
 
 def skills(request):
     return render(request, 'main/skills.html')

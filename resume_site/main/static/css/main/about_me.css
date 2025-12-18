@@ -1,0 +1,18 @@
+.about-detail img {
+    max-height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-detail img:hover {
+    transform: scale(1.02);
+}
+
+.about-detail h4 {
+    color: #4CAF50; /* Акцентний колір */
+    font-weight: 700;
+}
+
+.border-start {
+    border-left: 3px solid #4CAF50 !important;
+}

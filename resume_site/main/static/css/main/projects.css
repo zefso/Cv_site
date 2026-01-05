@@ -1,0 +1,35 @@
+.project-header {
+    background: #f8f9fa;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+.tech-badge {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #e9ecef;
+    color: #495057;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.card-project {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+.card-project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.project-image {
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}

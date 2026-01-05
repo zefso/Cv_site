@@ -1,49 +1,67 @@
 {% extends 'base/base.html' %}
 {% load static %}
 
-{% block title %}Досвід{% endblock %}
+{% block title %}Досвід — Роман Горбач{% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/main/experience.css' %}">
 {% endblock %}
 
 {% block content %}
+<section class="experience-section">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+            <h1 class="fw-bold">Мій шлях</h1>
+            <p class="text-muted">Професійний розвиток та технічні досягнення</p>
+        </div>
 
-<section id="experience">
-  <h2 class="title">Досвід</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-icon">
+                    <i class="bi bi-filetype-py"></i>
+                </div>
+                <div class="timeline-content card shadow-sm">
+                    <span class="time-tag">2024 — Тепер</span>
+                    <h3 class="h5 fw-bold">Самостійне вивчення Python</h3>
+                    <p class="mb-0">
+                        Глибоке вивчення синтаксису, робота з структурами даних (list, dict, set), 
+                        циклами та алгоритмами. Працюю над власними скриптами для автоматизації.
+                    </p>
+                    <div class="mt-2">
+                        <span class="badge bg-light text-dark border">Logic</span>
+                        <span class="badge bg-light text-dark border">Algorithms</span>
+                    </div>
+                </div>
+            </div>
 
-  <div class="experience-wrapper">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-icon">
+                    <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="timeline-content card shadow-sm">
+                    <span class="time-tag">2024 — Тепер</span>
+                    <h3 class="h5 fw-bold">Шкільний гурток інформатики</h3>
+                    <p class="mb-0">
+                        Беру активну участь у розв'язанні олімпіадних задач, допомагаю команді 
+                        з налагодженням коду та освоєнням основ комп'ютерних наук.
+                    </p>
+                </div>
+            </div>
 
-    <div class="experience-item">
-      <div class="dot"></div>
-      <h3>Самостійне вивчення Python</h3>
-      <p class="time">2024 — тепер</p>
-      <p>
-        Вивчаю програмування на Python: працюю з масивами, циклами
-        та алгоритмічними задачами.
-      </p>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-icon">
+                    <i class="bi bi-tools"></i>
+                </div>
+                <div class="timeline-content card shadow-sm">
+                    <span class="time-tag">2023 — Тепер</span>
+                    <h3 class="h5 fw-bold">Технічна підтримка</h3>
+                    <p class="mb-0">
+                        Діагностика програмних проблем, налаштування ОС Windows/Linux, 
+                        допомога в конфігурації локальних мереж для друзів та родини.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="experience-item">
-      <div class="dot"></div>
-      <h3>Участь у шкільному гуртку інформатики</h3>
-      <p class="time">2024 — тепер</p>
-      <p>
-        Розвиваю технічні навички, допомагаю однокласникам з
-        програмуванням та комп'ютерними завданнями.
-      </p>
-    </div>
-
-    <div class="experience-item">
-      <div class="dot"></div>
-      <h3>Технічна допомога родині та друзям</h3>
-      <p class="time">2023 — тепер</p>
-      <p>
-        Допомагаю налаштовувати комп'ютери та програми, вирішую
-        прості технічні проблеми.
-      </p>
-    </div>
-
-  </div>
 </section>
 {% endblock %}

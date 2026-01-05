@@ -1,3 +1,7 @@
+.about-detail {
+    padding-top: 2rem;
+}
+
 .about-detail img {
     max-height: 500px;
     object-fit: cover;

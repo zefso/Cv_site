@@ -13,29 +13,29 @@
     {% block extra_css %}{% endblock %}
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100" >
 
-{% block header_content %}
-{% endblock %}
-
-<nav class="custom-nav">
-    <a href="{% url 'home' %}">Головна сторінка</a>
-    <a href="{% url 'about_me' %}">Про мене</a>
-    <a href="{% url 'experience' %}">Досвід</a>
-    <a href="{% url 'skills' %}">Навички</a>
-    <a href="{% url 'projects' %}">Проєкти</a>
-    <a href="{% url 'contacts' %}">Контакти</a>
-</nav>
-
-<main>
-    {% block content %}
+    {% block header_content %}
     {% endblock %}
-</main>
 
-<footer class="footer">
-    <p>© 2025 Роман Горбач | Created with Django & Bootstrap</p>
-</footer>
+    <nav class="custom-nav">
+        <a href="{% url 'home' %}">Головна сторінка</a>
+        <a href="{% url 'about_me' %}">Про мене</a>
+        <a href="{% url 'experience' %}">Досвід</a>
+        <a href="{% url 'skills' %}">Навички</a>
+        <a href="{% url 'projects' %}">Проєкти</a>
+        <a href="{% url 'contacts' %}">Контакти</a>
+    </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <main class="flex-grow-1">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Роман Горбач | Created with Django & Bootstrap</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

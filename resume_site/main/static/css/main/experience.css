@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: system-ui, Segoe UI, Roboto, sans-serif;
+    color: #fff;
+  }
+
+  #experience {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .experience-wrapper {
+    display: grid;
+    gap: 18px;
+  }
+
+  .experience-item {
+    position: relative;
+    padding: 18px 22px 18px 45px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .45);
+    transition: transform .25s ease, box-shadow .25s ease, border .25s ease;
+  }
+
+  .experience-item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,.35);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .6);
+  }
+
+  .experience-item h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .time {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .experience-item p {
+    margin-top: 8px;
+    line-height: 1.5;
+    color: #e5e7eb;
+  }
+
+  .dot {
+    position: absolute;
+    top: 22px;
+    left: 18px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    box-shadow: 0 0 15px #60a5fa;
+  }

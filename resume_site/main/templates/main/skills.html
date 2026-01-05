@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Навички{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/main/skills.css' %}">
+{% endblock %}
+
+{% block content %}
+<section id="skills">
+  <h2 class="title">Навички</h2>
+
+  <div class="skills-block">
+
+    <h3>Технічні навички</h3>
+    <div class="skills-list">
+
+      <span class="skill">Python</span>
+      <span class="skill">Алгоритми</span>
+      <span class="skill">Оператори & цикли</span>
+      <span class="skill">Робота з масивами</span>
+      <span class="skill">Базова логіка програм</span>
+      <span class="skill">HTML</span>
+      <span class="skill">Git (базово)</span>
+
+    </div>
+
+    <h3>М’які навички</h3>
+    <div class="skills-list">
+
+      <span class="skill soft">Самостійне навчання</span>
+      <span class="skill soft">Логічне мислення</span>
+      <span class="skill soft">Увага до деталей</span>
+      <span class="skill soft">Вирішення задач</span>
+      <span class="skill soft">Командна робота</span>
+
+    </div>
+
+  </div>
+</section>
+
+
+{% endblock %}

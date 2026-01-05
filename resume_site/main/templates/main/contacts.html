@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 {% load static %}
 
-{% block title %}Мої Контакти{% endblock %}
+{% block title %}Мої {% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/main/projects.css' %}">
@@ -44,30 +44,38 @@
 
             <div class="col-lg-8">
                 <div class="form-card" data-aos="fade-left">
-                    <form action="#" method="post">
+                    <form method="post" action="{% url 'contacts' %}">
                         {% csrf_token %}
+
+                        {% if success %}
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Успішно!</strong> Повідомлення відправлено в Telegram.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endif %}
+                    
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Ім'я">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Ім'я" required>
                                     <label for="name">Ваше ім'я</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                                     <label for="email">Ваш Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Тема">
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Тема" required>
                                     <label for="subject">Тема повідомлення</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" id="message" style="height: 150px" placeholder="Повідомлення"></textarea>
+                                    <textarea name="message" class="form-control" id="message" style="height: 150px" placeholder="Повідомлення" required></textarea>
                                     <label for="message">Ваше повідомлення</label>
                                 </div>
                             </div>

@@ -1,22 +1,20 @@
 .contact-section {
     padding: 80px 0;
-    background-color: #fdfdfd;
+    background-color: #f8f9fa;
 }
 
-/* Картки контактів зліва */
+
 .info-box {
     background: #fff;
     padding: 25px;
-    border-radius: 16px;
+    border-radius: 15px;
     margin-bottom: 20px;
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s ease;
-    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
 }
 
 .info-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .info-box i {
@@ -43,13 +41,27 @@
     font-size: 0.85rem;
 }
 
-/* Форма справа */
+.form-floating > .form-control {
+    height: 70px !important;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating > textarea.form-control {
+    height: 180px !important;
+    padding-top: 1.625rem;
+}
+
+.form-floating > label {
+    padding: 1.2rem 0.75rem;
+    color: #6c757d;
+}
+
 .form-card {
     background: #fff;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.03);
-    border: 1px solid #f0f0f0;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
 }
 
 .form-control {
@@ -63,18 +75,17 @@
     border-color: #0984e3;
 }
 
-/* Кнопка */
 .btn-send {
-    background: #2d3436;
-    color: #fff;
+    background-color: #0984e3;
+    color: white;
     padding: 12px 30px;
     border-radius: 10px;
-    font-weight: 600;
     transition: all 0.3s ease;
+    border: none;
 }
 
 .btn-send:hover {
-    background: #0984e3;
-    color: #fff;
-    transform: scale(1.05);
+    background-color: #074b81;
+    transform: translateY(-2px);
+    color: white;
 }

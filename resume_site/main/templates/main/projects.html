@@ -4,7 +4,7 @@
 {% block title %}Мої проекти{% endblock %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css\main\project.css' %}">
+    <link rel="stylesheet" href="{% static 'css\main\projects.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -17,47 +17,30 @@
 
 <div class="container mb-5">
     <div class="row g-4">
+        {% for project in projects %}
         <div class="col-md-6 col-lg-4">
-            <div class="card card-project shadow-sm">
-                <div class="project-image">
-                    <i class="bi bi-cart4" style="font-size: 4rem;"></i>
-                    </div>
-                <div class="card-body">
-                    <div>
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">Stripe</span>
-                    </div>
-                    <h5 class="card-title fw-bold">E-commerce Platform</h5>
-                    <p class="card-text text-muted">Повнофункціональний магазин з кошиком, оплатою та адмін-панеллю для керування товарами.</p>
-                    <div class="d-flex justify-content-between align-items-center mt-4">
-                        <a href="#" class="btn btn-dark btn-sm">Детальніше</a>
-                        <a href="https://github.com/zefso" class="text-dark"><i class="bi bi-github fs-4"></i></a>
-                    </div>
+            <div class="project-card" data-aos="zoom-in">
+                <div class="project-img-wrapper">
+                    <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid">
+                </div>
+                
+                <div class="project-info p-4">
+                    <h4 class="fw-bold">{{ project.title }}</h4>
+                    <p class="text-muted">{{ project.description }}</p>
+                    
+                    {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank" class="btn btn-outline-primary btn-sm">
+                        Переглянути <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card card-project shadow-sm">
-                <div class="project-image">
-                    <i class="bi bi-robot" style="font-size: 4rem;"></i>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">NLP</span>
-                        <span class="tech-badge">Telegram API</span>
-                    </div>
-                    <h5 class="card-title fw-bold">AI Telegram Bot</h5>
-                    <p class="card-text text-muted">Бот, що використовує нейромережі для аналізу тексту та автоматичних відповідей.</p>
-                    <div class="d-flex justify-content-between align-items-center mt-4">
-                        <a href="#" class="btn btn-dark btn-sm">Детальніше</a>
-                        <a href="#" class="text-dark"><i class="bi bi-github fs-4"></i></a>
-                    </div>
-                </div>
-            </div>
+        {% empty %}
+        <div class="col-12 text-center">
+            <p>Проєктів поки немає, але вони скоро з'являться!</p>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

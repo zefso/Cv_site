@@ -51,3 +51,5 @@ def send_telegram_message(name, email, subject, message):
     except Exception as e:
         print(f"Помилка відправки: {e}")
 
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)

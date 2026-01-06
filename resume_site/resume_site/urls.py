@@ -17,3 +17,4 @@ urlpatterns = [
     path('skills/', views.skills, name='skills'),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+handler404 = 'main.views.custom_404'

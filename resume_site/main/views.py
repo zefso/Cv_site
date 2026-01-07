@@ -3,6 +3,10 @@ import requests
 from .forms import ContactForm
 from .models import Project
 
+from django.conf import settings
+from django.http import HttpResponseRedirect
+from django.utils import translation
+
 def home(request):
     project = Project.objects.all().order_by('-created_at')[:4]
     return render(request, 'base/home.html', {'projects': project})
@@ -53,3 +57,21 @@ def send_telegram_message(name, email, subject, message):
 
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
+
+
+def set_language(request, lang_code):
+    languages = [lang[0] for lang in settings.LANGUAGES]
+    if lang_code in languages:
+
+        translation.activate(lang_code)
+        next_url = request.META.get('HTTP_REFERER', '/')
+
+        for lang in languages:
+            if next_url.find(f'/{lang}/') != -1:
+                next_url = next_url.replace(f'/{lang}/', f'/{lang_code}/', 1)
+                break
+        
+        response = HttpResponseRedirect(next_url)
+        response.set_cookie(settings.LANGUAGE_COOKIE_NAME, lang_code)
+        return response
+    return HttpResponseRedirect('/')

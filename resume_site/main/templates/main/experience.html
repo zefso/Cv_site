@@ -1,7 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Досвід — Роман Горбач{% endblock %}
+{% block title %}{% trans "Досвід — Роман Горбач" %}{% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/main/experience.css' %}">
@@ -11,8 +12,8 @@
 <section class="experience-section">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-down">
-            <h1 class="fw-bold">Мій шлях</h1>
-            <p class="text-muted">Професійний розвиток та технічні досягнення</p>
+            <h1 class="fw-bold">{% trans "Мій шлях" %}</h1>
+            <p class="text-muted">{% trans "Професійний розвиток та технічні досягнення" %}</p>
         </div>
 
         <div class="timeline">
@@ -21,11 +22,10 @@
                     <i class="bi bi-filetype-py"></i>
                 </div>
                 <div class="timeline-content card shadow-sm">
-                    <span class="time-tag">2024 — Тепер</span>
-                    <h3 class="h5 fw-bold">Самостійне вивчення Python</h3>
+                    <span class="time-tag">{% trans "2024 — Тепер" %}</span>
+                    <h3 class="h5 fw-bold">{% trans "Самостійне вивчення Python" %}</h3>
                     <p class="mb-0">
-                        Глибоке вивчення синтаксису, робота з структурами даних (list, dict, set), 
-                        циклами та алгоритмами. Працюю над власними скриптами для автоматизації.
+                        {% trans "Глибоке вивчення синтаксису, робота з структурами даних (list, dict, set), циклами та алгоритмами. Працюю над власними скриптами для автоматизації." %}
                     </p>
                     <div class="mt-2">
                         <span class="badge bg-light text-dark border">Logic</span>
@@ -39,11 +39,10 @@
                     <i class="bi bi-mortarboard"></i>
                 </div>
                 <div class="timeline-content card shadow-sm">
-                    <span class="time-tag">2024 — Тепер</span>
-                    <h3 class="h5 fw-bold">Шкільний гурток інформатики</h3>
+                    <span class="time-tag">{% trans "2024 — Тепер" %}</span>
+                    <h3 class="h5 fw-bold">{% trans "Шкільний гурток інформатики" %}</h3>
                     <p class="mb-0">
-                        Беру активну участь у розв'язанні олімпіадних задач, допомагаю команді 
-                        з налагодженням коду та освоєнням основ комп'ютерних наук.
+                        {% trans "Беру активну участь у розв'язанні олімпіадних задач, допомагаю команді з налагодженням коду та освоєнням основ комп'ютерних наук." %}
                     </p>
                 </div>
             </div>
@@ -53,11 +52,10 @@
                     <i class="bi bi-tools"></i>
                 </div>
                 <div class="timeline-content card shadow-sm">
-                    <span class="time-tag">2023 — Тепер</span>
-                    <h3 class="h5 fw-bold">Технічна підтримка</h3>
+                    <span class="time-tag">{% trans "2023 — Тепер" %}</span>
+                    <h3 class="h5 fw-bold">{% trans "Технічна підтримка" %}</h3>
                     <p class="mb-0">
-                        Діагностика програмних проблем, налаштування ОС Windows/Linux, 
-                        допомога в конфігурації локальних мереж для друзів та родини.
+                        {% trans "Діагностика програмних проблем, налаштування ОС Windows/Linux, допомога в конфігурації локальних мереж для друзів та родини." %}
                     </p>
                 </div>
             </div>

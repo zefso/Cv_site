@@ -1,7 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Навички — Роман Горбач{% endblock %}
+{% block title %}{% trans "Навички — Роман Горбач" %}{% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/main/skills.css' %}">
@@ -11,13 +12,13 @@
 <section class="skills-section">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-down">
-            <h1 class="fw-bold">Мої Компетенції</h1>
-            <p class="text-muted">Технологічний стек та особисті якості</p>
+            <h1 class="fw-bold">{% trans "Мої Компетенції" %}</h1>
+            <p class="text-muted">{% trans "Технологічний стек та особисті якості" %}</p>
         </div>
 
         <div class="row g-5">
             <div class="col-lg-6" data-aos="fade-right">
-                <h3 class="mb-4 fw-bold"><i class="bi bi-cpu text-primary me-2"></i> Технічні навички</h3>
+                <h3 class="mb-4 fw-bold"><i class="bi bi-cpu text-primary me-2"></i> {% trans "Технічні навички" %}</h3>
                 
                 <div class="skill-item mb-4">
                     <div class="d-flex justify-content-between mb-2">
@@ -41,7 +42,7 @@
 
                 <div class="skill-item mb-4">
                     <div class="d-flex justify-content-between mb-2">
-                        <span class="fw-bold">Алгоритми та Логіка</span>
+                        <span class="fw-bold">{% trans "Алгоритми та Логіка" %}</span>
                         <span class="text-muted">80%</span>
                     </div>
                     <div class="progress">
@@ -71,31 +72,31 @@
             </div>
 
             <div class="col-lg-6" data-aos="fade-left">
-                <h3 class="mb-4 fw-bold"><i class="bi bi-person-hearts text-primary me-2"></i> М'які навички</h3>
+                <h3 class="mb-4 fw-bold"><i class="bi bi-person-hearts text-primary me-2"></i> {% trans "М'які навички" %}</h3>
                 
                 <div class="soft-skills-grid">
                     <div class="soft-skill-card">
                         <i class="bi bi-lightbulb"></i>
-                        <h5>Самостійне навчання</h5>
-                        <p>Швидко опановую нові бібліотеки та фреймворки.</p>
+                        <h5>{% trans "Самостійне навчання" %}</h5>
+                        <p>{% trans "Швидко опановую нові бібліотеки та фреймворки." %}</p>
                     </div>
 
                     <div class="soft-skill-card">
                         <i class="bi bi-chat-dots"></i>
-                        <h5>Командна робота</h5>
-                        <p>Вмію слухати, ділитися ідеями та допомагати іншим.</p>
+                        <h5>{% trans "Командна робота" %}</h5>
+                        <p>{% trans "Вмію слухати, ділитися ідеями та допомагати іншим." %}</p>
                     </div>
 
                     <div class="soft-skill-card">
                         <i class="bi bi-search"></i>
-                        <h5>Увага до деталей</h5>
-                        <p>Ретельна перевірка коду та логіки програм.</p>
+                        <h5>{% trans "Увага до деталей" %}</h5>
+                        <p>{% trans "Ретельна перевірка коду та логіки програм." %}</p>
                     </div>
 
                     <div class="soft-skill-card">
                         <i class="bi bi-journal-check"></i>
-                        <h5>Вирішення задач</h5>
-                        <p>Аналітичний підхід до виправлення багів та помилок.</p>
+                        <h5>{% trans "Вирішення задач" %}</h5>
+                        <p>{% trans "Аналітичний підхід до виправлення багів та помилок." %}</p>
                     </div>
                 </div>
             </div>

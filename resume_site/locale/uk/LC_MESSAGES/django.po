@@ -1,0 +1,454 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-07 21:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: .\main\templates\404.html:5
+msgid "404 - Сторінку не знайдено"
+msgstr "404 - Сторінку не знайдено"
+
+#: .\main\templates\404.html:14
+msgid "Ой! Сторінку не знайдено"
+msgstr "Ой! Сторінку не знайдено"
+
+#: .\main\templates\404.html:17
+msgid ""
+"Схоже, ви потрапили в цифрове нікуди. Можливо, посилання застаріло або в "
+"адресі була помилка."
+msgstr "Схоже, ви потрапили в цифрове нікуди. Можливо, посилання застаріло або в адресі була помилка."
+"Схоже, ви потрапили в цифрове нікуди. Можливо, посилання застаріло або в "
+"адресі була помилка."
+
+#: .\main\templates\404.html:22
+msgid "На головну"
+msgstr "На головну"
+
+#: .\main\templates\404.html:25
+msgid "Повідомити про помилку"
+msgstr "Повідомити про помилку"
+
+#: .\main\templates\base\base.html:7
+msgid "Roma Horbach | Python Developer"
+msgstr "Roma Horbach | Python Developer"
+
+#: .\main\templates\base\base.html:9
+msgid ""
+"Портфоліо Python/Django розробника Романа Горбача. Проєкти, навички та "
+"контакти."
+msgstr "Портфоліо Python/Django розробника Романа Горбача. Проєкти, навички та контакти."
+
+#: .\main\templates\base\base.html:14
+msgid "Backend розробник, який створює ефективні рішення на Python та Django."
+msgstr "Backend розробник, який створює ефективні рішення на Python та Django."
+
+#: .\main\templates\base\base.html:40
+msgid "Головна"
+msgstr "Головна"
+
+#: .\main\templates\base\base.html:41 .\main\templates\base\home.html:42
+msgid "Про мене"
+msgstr "Про мене"
+
+#: .\main\templates\base\base.html:42
+msgid "Досвід"
+msgstr "Досвід"
+
+#: .\main\templates\base\base.html:43
+msgid "Навички"
+msgstr "Навички"
+
+#: .\main\templates\base\base.html:44 .\main\templates\base\home.html:28
+msgid "Проєкти"
+msgstr "Проєкти"
+
+#: .\main\templates\base\base.html:45
+msgid "Контакти"
+msgstr "Контакти"
+
+#: .\main\templates\base\base.html:76
+msgid "© 2026 Роман Горбач | Built with Django "
+msgstr "© 2026 Роман Горбач | Built with Django "
+
+#: .\main\templates\base\home.html:5
+msgid "Резюме — Горбач Роман"
+msgstr "Резюме — Горбач Роман"
+
+#: .\main\templates\base\home.html:22
+msgid "Горбач Роман"
+msgstr "Горбач Роман"
+
+#: .\main\templates\base\home.html:25
+msgid ""
+"Студент подвійної програми (КРОК / DSW). Розробляю інтелектуальні системи та "
+"сучасні веб-додатки."
+msgstr "Студент подвійної програми (КРОК / DSW). Розробляю інтелектуальні системи та сучасні веб-додатки."
+"Студент подвійної програми (КРОК / DSW). Розробляю інтелектуальні системи та "
+"сучасні веб-додатки."
+
+#: .\main\templates\base\home.html:29
+msgid "Зв'язатися"
+msgstr "Зв'язатися"
+
+#: .\main\templates\base\home.html:44
+msgid ""
+"Я Python-розробник, захоплений створенням веб-додатків та роботою з даними. "
+"Зараз я фокусуюсь на"
+msgstr "Я Python-розробник, захоплений створенням веб-додатків та роботою з даними. Зараз я фокусуюсь на"
+"Я Python-розробник, захоплений створенням веб-додатків та роботою з даними. "
+"Зараз я фокусуюсь на"
+
+#: .\main\templates\base\home.html:44
+msgid "та"
+msgstr "та"
+
+#: .\main\templates\base\home.html:45
+msgid "навчаючись за подвійною програмою в Україні та Польщі."
+msgstr "навчаючись за подвійною програмою в Україні та Польщі."
+
+#: .\main\templates\base\home.html:52
+msgid "Досвід роботи"
+msgstr "Досвід роботи"
+
+#: .\main\templates\base\home.html:58
+msgid "Зараз"
+msgstr "Зараз"
+
+#: .\main\templates\base\home.html:60
+msgid "Назва Компанії / Стажування"
+msgstr "Назва Компанії / Стажування"
+
+#: .\main\templates\base\home.html:62
+msgid "Розробка REST API на Django Rest Framework."
+msgstr "Розробка REST API на Django Rest Framework."
+
+#: .\main\templates\base\home.html:63
+msgid "Оптимізація SQL запитів (PostgreSQL)."
+msgstr "Оптимізація SQL запитів (PostgreSQL)."
+
+#: .\main\templates\base\home.html:64
+msgid "Написання Unit-тестів."
+msgstr "Написання Unit-тестів."
+
+#: .\main\templates\base\home.html:74
+msgid ""
+"Створення телеграм-ботів, парсинг сайтів, автоматизація рутини та робота з "
+"API."
+msgstr "Створення телеграм-ботів, парсинг сайтів, автоматизація рутини та робота з API."
+
+#: .\main\templates\base\home.html:83
+msgid "Ключові навички"
+msgstr "Ключові навички"
+
+#: .\main\templates\base\home.html:100
+msgid "Останні проєкти"
+msgstr "Останні проєкти"
+
+#: .\main\templates\base\home.html:113
+msgid "Детальніше"
+msgstr "Детальніше"
+
+#: .\main\templates\base\home.html:125
+msgid "Проєктів поки що немає. Додайте їх через адмін-панель."
+msgstr "Проєктів поки що немає. Додайте їх через адмін-панель."
+
+#: .\main\templates\main\about_me.html:5
+msgid "Про мене — Роман Горбач"
+msgstr "Про мене — Роман Горбач"
+
+#: .\main\templates\main\about_me.html:21
+msgid "Моя історія"
+msgstr "Моя історія"
+
+#: .\main\templates\main\about_me.html:22
+msgid "Від Arduino до Machine Learning"
+msgstr "Від Arduino до Machine Learning"
+
+#: .\main\templates\main\about_me.html:23
+msgid "Мій шлях у програмуванні почався дуже рано — в 10 років."
+msgstr "Мій шлях у програмуванні почався дуже рано — в 10 років."
+
+#: .\main\templates\main\about_me.html:24
+msgid ""
+"Завдяки підтримці батька та брата я почав з електроніки. Хоча Arduino "
+"дало мені базове розуміння логіки, мені швидко стало затісно в рамках "
+"'заліза'. Справжня пристрасть з’явилася тоді, коли я відкрив для себе світ "
+"Python та можливості штучного інтелекту."
+msgstr "Завдяки підтримці батька та брата я почав з електроніки. Хоча Arduino"
+"дало мені базове розуміння логіки, мені швидко стало затісно в рамках 'заліза'."
+"Справжня пристрасть з’явилася тоді, коли я відкрив для себе світ Python та можливості"
+"штучного інтелекту."
+
+
+#: .\main\templates\main\about_me.html:25
+msgid ""
+"Зараз я фокусуюсь на тому, як навчати машини аналізувати дані та приймати "
+"рішення. Це те, що я називаю справжньою магією коду."
+msgstr "Зараз я фокусуюсь на тому, як навчати машини аналізувати дані та приймати" 
+"рішення. Це те, що я називаю справжньою магією коду."
+
+#: .\main\templates\main\about_me.html:30
+msgid "Освіта"
+msgstr "Освіта"
+
+#: .\main\templates\main\about_me.html:35
+msgid "Університет «КРОК»"
+msgstr "Університет «КРОК»"
+
+#: .\main\templates\main\about_me.html:36
+msgid "Інженерія Програмного Забезпечення"
+msgstr "Інженерія Програмного Забезпечення"
+
+#: .\main\templates\main\about_me.html:37
+msgid "Україна, Київ"
+msgstr "Україна, Київ"
+
+#: .\main\templates\main\about_me.html:45
+msgid "Польща, Вроцлав"
+msgstr "Польща, Вроцлав"
+
+#: .\main\templates\main\about_me.html:53
+msgid "Поза межами коду"
+msgstr "Поза межами коду"
+
+#: .\main\templates\main\about_me.html:54
+msgid ""
+"Я вважаю, що програмування — це теж своєрідна головоломка. Тому у вільний "
+"час я обожнюю:"
+msgstr "Я вважаю, що програмування — це теж своєрідна головоломка. Тому у вільний час я обожнюю:"
+"Я вважаю, що програмування — це теж своєрідна головоломка. Тому у вільний "
+"час я обожнюю:"
+
+#: .\main\templates\main\about_me.html:58
+msgid "Пазли та головоломки:"
+msgstr "Пазли та головоломки:"
+
+#: .\main\templates\main\about_me.html:58
+msgid " Це мій спосіб медитації та тренування терпіння."
+msgstr " Це мій спосіб медитації та тренування терпіння."
+
+#: .\main\templates\main\about_me.html:62
+msgid "Комп'ютерні ігри:"
+msgstr "Комп'ютерні ігри:"
+
+#: .\main\templates\main\about_me.html:62
+msgid " Допомагають перемикати увагу та вивчати ігрові механіки."
+msgstr " Допомагають перемикати увагу та вивчати ігрові механіки."
+
+#: .\main\templates\main\about_me.html:65
+msgid ""
+"Ці хобі допомагають мені підтримувати аналітичний склад розуму та знаходити "
+"нестандартні рішення в роботі над ML-моделями."
+msgstr "Ці хобі допомагають мені підтримувати аналітичний склад розуму та знаходити " 
+"нестандартні рішення в роботі над ML-моделями."
+
+
+#: .\main\templates\main\contacts.html:5
+msgid "Мої Контакти"
+msgstr "Мої Контакти"
+
+#: .\main\templates\main\contacts.html:16
+msgid "Давайте поспілкуємось"
+msgstr "Давайте поспілкуємось"
+
+#: .\main\templates\main\contacts.html:17
+msgid "Відкритий до нових проєктів та цікавих пропозицій"
+msgstr "Відкритий до нових проєктів та цікавих пропозицій"
+
+#: .\main\templates\main\contacts.html:27
+msgid "Написати →"
+msgstr "Написати →"
+
+#: .\main\templates\main\contacts.html:34
+msgid "Чат у Telegram →"
+msgstr "Чат у Telegram →"
+
+#: .\main\templates\main\contacts.html:41
+msgid "Профіль →"
+msgstr "Профіль →"
+
+#: .\main\templates\main\contacts.html:53
+msgid "Успішно!"
+msgstr "Успішно!"
+
+#: .\main\templates\main\contacts.html:53
+msgid "Повідомлення відправлено в Telegram."
+msgstr "Повідомлення відправлено в Telegram."
+
+#: .\main\templates\main\contacts.html:62
+msgid "Ваше ім'я"
+msgstr "Ваше ім'я"
+
+#: .\main\templates\main\contacts.html:68
+msgid "Ваш Email"
+msgstr "Ваш Email"
+
+#: .\main\templates\main\contacts.html:74
+msgid "Тема повідомлення"
+msgstr "Тема повідомлення"
+
+#: .\main\templates\main\contacts.html:80
+msgid "Ваше повідомлення"
+msgstr "Ваше повідомлення"
+
+#: .\main\templates\main\contacts.html:85
+msgid "Відправити повідомлення "
+msgstr "Відправити повідомлення "
+
+#: .\main\templates\main\experience.html:5
+msgid "Досвід — Роман Горбач"
+msgstr "Досвід — Роман Горбач"
+
+#: .\main\templates\main\experience.html:15
+msgid "Мій шлях"
+msgstr "Мій шлях"
+
+#: .\main\templates\main\experience.html:16
+msgid "Професійний розвиток та технічні досягнення"
+msgstr "Професійний розвиток та технічні досягнення"
+
+#: .\main\templates\main\experience.html:25
+#: .\main\templates\main\experience.html:42
+msgid "2024 — Тепер"
+msgstr "2024 — Тепер"
+
+#: .\main\templates\main\experience.html:26
+msgid "Самостійне вивчення Python"
+msgstr "Самостійне вивчення Python"
+
+#: .\main\templates\main\experience.html:28
+msgid ""
+"Глибоке вивчення синтаксису, робота з структурами даних (list, dict, set), "
+"циклами та алгоритмами. Працюю над власними скриптами для автоматизації."
+msgstr "Глибоке вивчення синтаксису, робота з структурами даних (list, dict, set), "
+"циклами та алгоритмами. Працюю над власними скриптами для автоматизації."
+
+
+#: .\main\templates\main\experience.html:43
+msgid "Шкільний гурток інформатики"
+msgstr "Шкільний гурток інформатики"
+
+#: .\main\templates\main\experience.html:45
+msgid ""
+"Беру активну участь у розв'язанні олімпіадних задач, допомагаю команді з "
+"налагодженням коду та освоєнням основ комп'ютерних наук."
+msgstr "Беру активну участь у розв'язанні олімпіадних задач, допомагаю команді з "
+"налагодженням коду та освоєнням основ комп'ютерних наук."
+
+#: .\main\templates\main\experience.html:55
+msgid "2023 — Тепер"
+msgstr "2023 — Тепер"
+
+#: .\main\templates\main\experience.html:56
+msgid "Технічна підтримка"
+msgstr "Технічна підтримка"
+
+#: .\main\templates\main\experience.html:58
+msgid ""
+"Діагностика програмних проблем, налаштування ОС Windows/Linux, допомога в "
+"конфігурації локальних мереж для друзів та родини."
+msgstr "Діагностика програмних проблем, налаштування ОС Windows/Linux, допомога в конфігурації локальних мереж для друзів та родини."
+
+#: .\main\templates\main\projects.html:5
+msgid "Мої проекти"
+msgstr "Мої проекти"
+
+#: .\main\templates\main\projects.html:14
+msgid "Портфоліо проєктів"
+msgstr "Портфоліо проєктів"
+
+#: .\main\templates\main\projects.html:15
+msgid "Тут зібрані мої найкращі розробки: від веб-сервісів до ML-моделей."
+msgstr "Тут зібрані мої найкращі розробки: від веб-сервісів до ML-моделей."
+
+#: .\main\templates\main\projects.html:34
+msgid "Переглянути"
+msgstr "Переглянути"
+
+#: .\main\templates\main\projects.html:42
+msgid "Проєктів поки немає, але вони скоро з'являться!"
+msgstr "Проєктів поки немає, але вони скоро з'являться!"
+
+#: .\main\templates\main\skills.html:5
+msgid "Навички — Роман Горбач"
+msgstr "Навички — Роман Горбач"
+
+#: .\main\templates\main\skills.html:15
+msgid "Мої Компетенції"
+msgstr "Мої Компетенції"
+
+#: .\main\templates\main\skills.html:16
+msgid "Технологічний стек та особисті якості"
+msgstr "Технологічний стек та особисті якості"
+
+#: .\main\templates\main\skills.html:21
+msgid "Технічні навички"
+msgstr "Технічні навички"
+
+#: .\main\templates\main\skills.html:45
+msgid "Алгоритми та Логіка"
+msgstr "Алгоритми та Логіка"
+
+#: .\main\templates\main\skills.html:75
+msgid "М'які навички"
+msgstr "М'які навички"
+
+#: .\main\templates\main\skills.html:80
+msgid "Самостійне навчання"
+msgstr "Самостійне навчання"
+
+#: .\main\templates\main\skills.html:81
+msgid "Швидко опановую нові бібліотеки та фреймворки."
+msgstr "Швидко опановую нові бібліотеки та фреймворки."
+
+#: .\main\templates\main\skills.html:86
+msgid "Командна робота"
+msgstr "Командна робота"
+
+#: .\main\templates\main\skills.html:87
+msgid "Вмію слухати, ділитися ідеями та допомагати іншим."
+msgstr "Вмію слухати, ділитися ідеями та допомагати іншим."
+
+#: .\main\templates\main\skills.html:92
+msgid "Увага до деталей"
+msgstr "Увага до деталей"
+
+#: .\main\templates\main\skills.html:93
+msgid "Ретельна перевірка коду та логіки програм."
+msgstr "Ретельна перевірка коду та логіки програм."
+
+#: .\main\templates\main\skills.html:98
+msgid "Вирішення задач"
+msgstr "Вирішення задач"
+
+#: .\main\templates\main\skills.html:99
+msgid "Аналітичний підхід до виправлення багів та помилок."
+msgstr "Аналітичний підхід до виправлення багів та помилок."
+
+#: .\resume_site\settings.py:116
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+#: .\resume_site\settings.py:117
+msgid "English"
+msgstr "English"
+
+#: .\resume_site\settings.py:118
+msgid "Polish"
+msgstr "Polish"

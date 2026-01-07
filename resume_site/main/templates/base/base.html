@@ -1,18 +1,17 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="uk">
-<head>
+{% load i18n %}  <!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE }}"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>{% block title %}Roma Horbach | Python Developer{% endblock %}</title>
+    <title>{% block title %}{% trans "Roma Horbach | Python Developer" %}{% endblock %}</title>
     
-    <meta name="description" content="{% block description %}Портфоліо Python/Django розробника Романа Горбача. Проєкти, навички та контакти.{% endblock %}">
+    <meta name="description" content="{% block description %}{% trans 'Портфоліо Python/Django розробника Романа Горбача. Проєкти, навички та контакти.' %}{% endblock %}">
     <meta name="keywords" content="Python, Django, Developer, Portfolio, Backend, Рома Горбач">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Roma Horbach | Portfolio">
-    <meta property="og:description" content="Backend розробник, який створює ефективні рішення на Python та Django.">
+    <meta property="og:description" content="{% trans 'Backend розробник, який створює ефективні рішення на Python та Django.' %}">
     
     <meta property="og:image" content="{% static 'img/og-preview.jpg' %}">
 
@@ -38,17 +37,23 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center gap-2">
-                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'about_me' %}">Про мене</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'experience' %}">Досвід</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'skills' %}">Навички</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Проєкти</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'contacts' %}">Контакти</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">{% trans "Головна" %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about_me' %}">{% trans "Про мене" %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'experience' %}">{% trans "Досвід" %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'skills' %}">{% trans "Навички" %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">{% trans "Проєкти" %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contacts' %}">{% trans "Контакти" %}</a></li>
 
-                    <li class="nav-item ms-lg-3 d-flex gap-2 language-switcher-nav">
-                        <a href="?lang=ua" class="lang-link"><img src="{% static 'img/flags/ua.png' %}" width="20" alt="UA"></a>
-                        <a href="?lang=en" class="lang-link"><img src="{% static 'img/flags/en.png' %}" width="20" alt="EN"></a>
-                        <a href="?lang=pl" class="lang-link"><img src="{% static 'img/flags/pl.png' %}" width="20" alt="PL"></a>
+                    <li class="nav-item ms-lg-3 d-flex gap-2 language-switcher-nav align-items-center">
+                        <a href="{% url 'set_language' 'uk' %}" class="lang-link">
+                            <img src="{% static 'img/flags/uk.png' %}" width="22" alt="UA" title="Українська">
+                        </a>
+                        <a href="{% url 'set_language' 'en' %}" class="lang-link">
+                            <img src="{% static 'img/flags/en.png' %}" width="22" alt="EN" title="English">
+                        </a>
+                        <a href="{% url 'set_language' 'pl' %}" class="lang-link">
+                            <img src="{% static 'img/flags/pl.png' %}" width="22" alt="PL" title="Polski">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +73,7 @@
                 <a href="https://www.linkedin.com/in/roma-horbach-9ab0a729b/" class="text-dark mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
                 <a href="https://t.me/zefsooo" class="text-dark mx-2 fs-4"><i class="bi bi-telegram"></i></a>
             </div>
-            <p class="mb-0 text-muted small">© 2026 Роман Горбач | Built with Django & <i class="bi bi-heart-fill text-danger"></i></p>
+            <p class="mb-0 text-muted small">{% trans "© 2026 Роман Горбач | Built with Django " %} <i class="bi bi-heart-fill text-danger"></i></p>
         </div>
     </footer>
 

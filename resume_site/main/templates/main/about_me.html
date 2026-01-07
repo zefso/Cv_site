@@ -1,7 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Про мене — Роман Горбач{% endblock %}
+{% block title %}{% trans "Про мене — Роман Горбач" %}{% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/main/about_me.css' %}">
@@ -17,23 +18,23 @@
                 </div>
             </div>
             <div class="col-md-7" data-aos="fade-left">
-                <span class="badge bg-primary mb-2">My Story</span>
-                <h1 class="fw-bold mb-4">Від Arduino до Machine Learning</h1>
-                <p class="lead">Мій шлях у програмуванні почався дуже рано — в 10 років.</p>
-                <p>Завдяки підтримці батька та брата я почав з електроніки. Хоча **Arduino** дало мені базове розуміння логіки, мені швидко стало затісно в рамках "заліза". Справжня пристрасть з’явилася тоді, коли я відкрив для себе світ **Python** та можливості **штучного інтелекту**.</p>
-                <p>Зараз я фокусуюсь на тому, як навчати машини аналізувати дані та приймати рішення. Це те, що я називаю справжньою магією коду.</p>
+                <span class="badge bg-primary mb-2">{% trans "Моя історія" %}</span>
+                <h1 class="fw-bold mb-4">{% trans "Від Arduino до Machine Learning" %}</h1>
+                <p class="lead">{% trans "Мій шлях у програмуванні почався дуже рано — в 10 років." %}</p>
+                <p>{% trans "Завдяки підтримці батька та брата я почав з електроніки. Хоча Arduino дало мені базове розуміння логіки, мені швидко стало затісно в рамках 'заліза'. Справжня пристрасть з’явилася тоді, коли я відкрив для себе світ Python та можливості штучного інтелекту." %}</p>
+                <p>{% trans "Зараз я фокусуюсь на тому, як навчати машини аналізувати дані та приймати рішення. Це те, що я називаю справжньою магією коду." %}</p>
             </div>
         </div>
 
         <div class="edu-section mb-5 p-4 p-md-5 rounded-4 shadow-sm" data-aos="fade-up">
-            <h3 class="fw-bold mb-4 text-center">Освіта (Double Degree Program)</h3>
+            <h3 class="fw-bold mb-4 text-center">{% trans "Освіта" %} (Double Degree Program)</h3>
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="edu-card h-100">
                         <i class="bi bi-mortarboard-fill"></i>
-                        <h5>Університет «КРОК»</h5>
-                        <p class="mb-1 text-primary fw-bold">Інженерія Програмного Забезпечення</p>
-                        <p class="small text-muted">2022 — 2026 | Україна, Київ</p>
+                        <h5>{% trans "Університет «КРОК»" %}</h5>
+                        <p class="mb-1 text-primary fw-bold">{% trans "Інженерія Програмного Забезпечення" %}</p>
+                        <p class="small text-muted">2022 — 2026 | {% trans "Україна, Київ" %}</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -41,7 +42,7 @@
                         <i class="bi bi-cloud-check-fill"></i>
                         <h5>Dolnośląska Szkoła Wyższa (DSW)</h5>
                         <p class="mb-1 text-primary fw-bold">Cloud & Apps Engineering</p>
-                        <p class="small text-muted">2024 — 2028 | Польща, Вроцлав</p>
+                        <p class="small text-muted">2024 — 2028 | {% trans "Польща, Вроцлав" %}</p>
                     </div>
                 </div>
             </div>
@@ -49,19 +50,19 @@
 
         <div class="row align-items-center mb-5">
             <div class="col-md-7 order-md-1 order-2" data-aos="fade-right">
-                <h3 class="fw-bold mb-4">Поза межами коду</h3>
-                <p>Я вважаю, що програмування — це теж своєрідна головоломка. Тому у вільний час я обожнюю:</p>
+                <h3 class="fw-bold mb-4">{% trans "Поза межами коду" %}</h3>
+                <p>{% trans "Я вважаю, що програмування — це теж своєрідна головоломка. Тому у вільний час я обожнюю:" %}</p>
                 <div class="hobby-list">
                     <div class="hobby-item">
                         <i class="bi bi-puzzle"></i>
-                        <span><strong>Пазли та головоломки:</strong> Це мій спосіб медитації та тренування терпіння.</span>
+                        <span><strong>{% trans "Пазли та головоломки:" %}</strong>{% trans " Це мій спосіб медитації та тренування терпіння." %}</span>
                     </div>
                     <div class="hobby-item">
                         <i class="bi bi-controller"></i>
-                        <span><strong>Комп'ютерні ігри:</strong> Допомагають перемикати увагу та вивчати ігрові механіки.</span>
+                        <span><strong>{% trans "Комп'ютерні ігри:" %}</strong>{% trans " Допомагають перемикати увагу та вивчати ігрові механіки." %}</span>
                     </div>
                 </div>
-                <p class="mt-3">Ці хобі допомагають мені підтримувати аналітичний склад розуму та знаходити нестандартні рішення в роботі над ML-моделями.</p>
+                <p class="mt-3">{% trans "Ці хобі допомагають мені підтримувати аналітичний склад розуму та знаходити нестандартні рішення в роботі над ML-моделями." %}</p>
             </div>
             <div class="col-md-5 order-md-2 order-1" data-aos="zoom-in">
                 <img src="{% static 'img/me/me1.jpg' %}" class="img-fluid rounded-4 shadow-lg mb-4 mb-md-0" alt="Work Process">

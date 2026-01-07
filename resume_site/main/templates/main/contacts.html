@@ -1,7 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Мої {% endblock %}
+{% block title %}{% trans "Мої Контакти" %}{% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/main/projects.css' %}">
@@ -12,8 +13,8 @@
 <section class="contact-section">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-down">
-            <h1 class="fw-bold">Давайте поспілкуємось</h1>
-            <p class="text-muted">Відкритий до нових проєктів та цікавих пропозицій</p>
+            <h1 class="fw-bold">{% trans "Давайте поспілкуємось" %}</h1>
+            <p class="text-muted">{% trans "Відкритий до нових проєктів та цікавих пропозицій" %}</p>
         </div>
 
         <div class="row g-4">
@@ -23,21 +24,21 @@
                         <i class="bi bi-envelope-at text-primary"></i>
                         <h5>Email</h5>
                         <p>roman27gorbach@gmail.com</p>
-                        <a href="mailto:roman27gorbach@gmail.com">Написати →</a>
+                        <a href="mailto:roman27gorbach@gmail.com">{% trans "Написати →" %}</a>
                     </div>
                     
                     <div class="info-box" data-aos="fade-right" data-aos-delay="100">
                         <i class="bi bi-telegram text-info"></i>
                         <h5>Telegram</h5>
                         <p>@zefsooo</p>
-                        <a href="https://t.me/zefsooo" target="_blank">Чат у Telegram →</a>
+                        <a href="https://t.me/zefsooo" target="_blank">{% trans "Чат у Telegram →" %}</a>
                     </div>
 
                     <div class="info-box" data-aos="fade-right" data-aos-delay="200">
                         <i class="bi bi-linkedin text-primary"></i>
                         <h5>LinkedIn</h5>
                         <p>Roma Horbach</p>
-                        <a href="https://www.linkedin.com/in/roma-horbach-9ab0a729b/" target="_blank">Профіль →</a>
+                        <a href="https://www.linkedin.com/in/roma-horbach-9ab0a729b/" target="_blank">{% trans "Профіль →" %}</a>
                     </div>
                 </div>
             </div>
@@ -49,7 +50,7 @@
 
                         {% if success %}
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <strong>Успішно!</strong> Повідомлення відправлено в Telegram.
+                            <strong>{% trans "Успішно!" %}</strong> {% trans "Повідомлення відправлено в Telegram." %}
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         {% endif %}
@@ -58,30 +59,30 @@
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Ім'я" required>
-                                    <label for="name">Ваше ім'я</label>
+                                    <label for="name">{% trans "Ваше ім'я" %}</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-                                    <label for="email">Ваш Email</label>
+                                    <label for="email">{% trans "Ваш Email" %}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" name="subject" class="form-control" id="subject" placeholder="Тема" required>
-                                    <label for="subject">Тема повідомлення</label>
+                                    <label for="subject">{% trans "Тема повідомлення" %}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea name="message" class="form-control" id="message" style="height: 150px" placeholder="Повідомлення" required></textarea>
-                                    <label for="message">Ваше повідомлення</label>
+                                    <label for="message">{% trans "Ваше повідомлення" %}</label>
                                 </div>
                             </div>
                             <div class="col-12 text-end">
                                 <button type="submit" class="btn btn-send">
-                                    Відправити повідомлення <i class="bi bi-send-fill ms-2"></i>
+                                    {% trans "Відправити повідомлення " %}<i class="bi bi-send-fill ms-2"></i>
                                 </button>
                             </div>
                         </div>

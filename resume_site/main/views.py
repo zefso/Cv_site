@@ -44,9 +44,13 @@ def projects(request):
 def skills(request):
     return render(request, 'main/skills.html')
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 def send_telegram_message(name, email, subject, message):
-    token = "8279558209:AAEb-CbxM-iswftzYplpLoH5nsvXJAdn70w"
-    chat_id = "657820985"
+    token = os.getenv('TELEGRAM_BOT_TOKEN')
+    chat_id = os.getenv('TELEGRAM_CHAT_ID')
     text = f"📩 Нове повідомлення!\n\n👤 Від: {name}\n📧 Email: {email}\n📌 Тема: {subject}\n📝 Текст: {message}"
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     

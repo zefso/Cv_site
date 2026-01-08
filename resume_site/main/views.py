@@ -7,6 +7,10 @@ from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils import translation
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 def home(request):
     project = Project.objects.all().order_by('-created_at')[:4]
     return render(request, 'base/home.html', {'projects': project})
@@ -44,9 +48,6 @@ def projects(request):
 def skills(request):
     return render(request, 'main/skills.html')
 
-import os
-from dotenv import load_dotenv
-load_dotenv()
 
 def send_telegram_message(name, email, subject, message):
     token = os.getenv('TELEGRAM_BOT_TOKEN')

@@ -1,50 +1,91 @@
-# 🚀 Django Portfolio Website - Roma Horbach
+# 👨‍💻 Roman Horbach — Professional Portfolio Website
 
-Це моє персональне портфоліо, створене на **Django**. Сайт містить інформацію про мої навички, проєкти та форму зворотного зв'язку з інтеграцією Telegram.
+![Django](https://img.shields.io/badge/Framework-Django%205.2-green?style=for-the-badge&logo=django)
+![Python](https://img.shields.io/badge/Language-Python%203.11-blue?style=for-the-badge&logo=python)
+![i18n](https://img.shields.io/badge/Localization-i18n%20Support-orange?style=for-the-badge)
 
-## ✨ Функціонал
-- **Динамічні проєкти**: Керування проєктами через Django Admin.
-- **Telegram Bot Integration**: Миттєві сповіщення про нові повідомлення з форми контактів.
-- **SEO Optimized**: Налаштовані мета-теги та Open Graph для соцмереж.
-- **Responsive Design**: Адаптивний інтерфейс на Bootstrap 5.
-- **Custom 404 Page**: Стилізована сторінка помилки.
+Modern, high-performance, **multilingual** portfolio website showcasing my journey from **Arduino electronics** → **Machine Learning** → **Backend Development**.
 
-## 🛠 Стек технологій
-- **Backend:** Python 3.11, Django 5.x
-- **Database:** SQLite (локально), PostgreSQL (деплой)
-- **Frontend:** HTML5, CSS3, Bootstrap 5, AOS (Animations)
-- **API:** Telegram Bot API
-- **Tools:** Pillow (обробка зображень), Requests
+## 🌍 Key Features
 
-## 🚀 Як запустити локально
+- **Multilingual support** (English / Ukrainian / Polish) using **Django native i18n**
+- Dynamic language prefixes in URLs (`/en/`, `/pl/`, `/uk/`)
+- Session + cookie based language preference
+- High-quality manual translations (PO/MO files)
+- Responsive design with **Bootstrap 5**
+- Smooth scroll animations via **AOS**
+- Custom interactive timeline component
+- Telegram Bot integration for contact form (async)
+- Secure credentials handling via `.env`
 
-1. Клонуйте репозиторій:
-   ```bash
-   git clone [https://github.com/vash-nick/portfolio.git](https://github.com/vash-nick/portfolio.git)
-Створіть віртуальне середовище:
-python -m venv venv
-source venv/bin/activate  # для Linux/Mac
-venv\Scripts\activate     # для Windows
-Встановіть залежності:
+## 🛠️ Tech Stack
+
+| Category          | Technology                          |
+|-------------------|-------------------------------------|
+| Backend           | Django 5.2, Python 3.11             |
+| Frontend          | Bootstrap 5, HTML5, CSS3            |
+| Animations        | AOS (Animate on Scroll)             |
+| Internationalization | Django i18n + gettext            |
+| Contact form      | Telegram Bot API (python-telegram-bot) |
+| Environment       | python-dotenv                       |
+| Deployment-ready  | gunicorn + whitenoise (recommended) |
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/zefso/resume_site.git
+cd resume_site
+```
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
-Виконайте міграції:
+```
+### 3. Create .env file in the root folder
+```bash
+#    Example content:
+#    SECRET_KEY=your-very-long-random-secret-key
+#    DEBUG=True
+#    TELEGRAM_BOT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+#    TELEGRAM_CHAT_ID=123456789
+```
+
+### 4. Apply migrations & compile translations
+```bash
 python manage.py migrate
-Створіть суперкористувача:
-python manage.py createsuperuser
-Запустіть сервер:
+python manage.py compilemessages
+```
+### 5. Run development server
+```bash
 python manage.py runserver
-📩 Контакти
-LinkedIn: Roma Horbach
-Telegram: [@твій-нік]
+Open → http://127.0.0.1:8000/
+```
+### 📂 Project Structure (main parts)
+```bash
+resume_site/          
+├── .env              
+├── .gitignore         
+├── manage.py          
+├── requirements.txt
+├── README.md
+├── main/              
+│   ├── views.py
+│   └── ...
+└── resume_site/       
+    ├── settings.py
+    └── ...               
+```
+## 🎓 Education
+- Double Degree Program — Software Engineering
 
----
+- KROK University (Kyiv, Ukraine)
+- DSW University of Lower Silesia (Wrocław, Poland)
 
-### Тема 2: Багатомовність (Internationalization - i18n)
+## 📬 Contact & Links
 
-Це складніша тема, але ми її подужаємо. У Django це робиться через `django.utils.translation`.
+- Telegram → @zefsooo
+- GitHub   → zefso
+- LinkedIn → Roma Horbach
 
-**Короткий план, як ми це зробимо:**
-1.  Додамо `i18n` у `settings.py`.
-2.  Огорнемо тексти в шаблонах тегом `{% trans "Текст" %}`.
-3.  Створимо файли перекладу (`.po` файли).
-4.  Додамо перемикач мов на сайті.
+
+### © 2026 Roman Horbach. Built with ❤️ and Python.

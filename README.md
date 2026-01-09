@@ -34,7 +34,7 @@ Modern, high-performance, **multilingual** portfolio website showcasing my journ
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/zefso/resume_site.git
+git clone https://github.com/zefso/Cv_site
 cd resume_site
 ```
 ### 2. Install dependencies
